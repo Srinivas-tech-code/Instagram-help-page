@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'sidebar content'
+        'footer footer';
+      grid-gap: 10px; 
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      padding: 10px;
+      background-color: #eee;
+    }
+
+    .content {
+      grid-area: content;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .search-bar {
+      margin-bottom: 10px;
+    }
+
+    .search-bar input {
+      height: 40px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    features {
+      margin-top: 20px;
+    }
+
+    features h3 {
+      margin-bottom: 10px;
+    }
+
+    features a {
+      display: block;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          'header'
+          'sidebar'
+          'content'
+          'footer';
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="abcd">
+      <img src="static/1497553304-104_84834.png" height="150px" width="150px" alt="Instagram Logo">
+      <h3>Help Center</h3>
+    </div>
+    <h1 style="color: blue; font-size: large; padding-right: 10%;">English (US)</h1>
+  </header>
+  <main class="container">
+    <div class="sidebar">
+      <h2>Instagram Features</h2>
+      <details>
+        <summary>
+            Instagram Features
+        </summary>
+        <summary>Your Profile</summary>
+        <p>Photos and videos your tagged in</p>
+        <a href="#" style="text-decoration: none;color: black;">Sharing Photos and videos</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Exploring photos and videos</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Messaging</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Stories</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Reels</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Live</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Fundraisers and donations</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Shop</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Payments in instagram</a>
+        </br>
+    </details>
+    <details>
+        <summary>
+            Manage your account
+        </summary>
+        <a href="#" style="text-decoration: none;color: black;">Signing up and getting started</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Adjust your account settings</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Notification settings</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Adding accounts</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Delete your account</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Verified badges</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Accessibility</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">About Instagram ads</a>
+        </br>
+    </details>
+    <details>
+        <summary>
+            Staying safe
+        </summary>
+        <a href="#" style="text-decoration: none;color: black;">Sharing photos safely</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Safety tips</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Tips for parents</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Being your authentic self on instagram</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Abuse and spam</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Ways to deal with conflict and abuse on instagram</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Self injury</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">About eating disorders</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Information to law enforcements</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Health and safety warnings for meta spark AR walk experiences</a>
+        </br>
+    </details>
+    <details>
+        <summary>
+            Privacy, Security and Reporting
+        </summary>
+        <a href="#" style="text-decoration: none;color: black;">Manage your privacy settings</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Login and passwords</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">How to report things</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">How to contact the grevience officer and instagram in India</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Australia online safety act onn instagram</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Impersonation accounts</a>
+        </br>
+    </details>
+    <details>
+        <summary>
+            Terms and policies
+        </summary>
+        <a href="#" style="text-decoration: none;color: black;">Community guidelines/a>
+        <a href="#" style="text-decoration: none;color: black;">Privacy Policy</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Terms of use</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Platform Policy</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Cookies policy</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Transparency center</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Community payment terms</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Instagram purchase protection policy</a>
+        </br>
+    </details>
+    <details>
+        <summary>
+            Threads
+        </summary>
+        <a href="#" style="text-decoration: none;color: black;">Your threads profile</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Post on threads</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Explore on threads</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Your threads settings</a>
+        </br>
+        <a href="#" style="text-decoration: none;color: black;">Threads policies and terms</a>
+        </br>
+    </details>
+    </div>
+    <div class="content">
+      <h1>How can we help you</h1>
+      <section class="search-bar">
+        <input type="text" placeholder="Search help articles..." style="height: 40px;padding: 10px;">
+      </section>
+      <features>
+        <h3>Featured Topics</h3>
+          <br/>
+          <br/>
+          <a href="#" style="text-decoration: none;color: black;">Reels</a>
+          </br>
+        </br>
+
+          <a href="#" style="text-decoration: none;color: black;">About AIs on Instagram</a>
+          </br>
+        </br>
+          <a href="#" style="text-decoration: none;color: black;">Join a broadcast channel on Instagram</a>
+          </br>
+        </br>
+          <a href="#" style="text-decoration: none;color: black;">Check your Account Status on Instagram</a>
+          </br>
+        </br>
+          <a href="#" style="text-decoration: none;color: black;">Ads and how they’re managed in the EU</a>
+          </br>
+        </br>
+          <a href="#" style="text-decoration: none;color: black;">Your Threads profile</a>
+          </br>
+          
+        </features>
+    </div>
+</div>
+        
+      </main>
+
+
+</body>
+</html>
